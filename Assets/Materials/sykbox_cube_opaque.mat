@@ -7,21 +7,29 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sykbox_debug_labels
-  m_Shader: {fileID: -6465566751694194690, guid: af33d86382ae2df4eb2429a34436adde,
+  m_Name: sykbox_cube_opaque
+  m_Shader: {fileID: -6465566751694194690, guid: 92ed0ebf55a19f44b90ef4df10d3b688,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Cubemap_5141CA8:
+        m_Texture: {fileID: 8900000, guid: 855eb36b143107f49b594810ab88d761, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Cubemap_CD13CB05:
+        m_Texture: {fileID: 8900000, guid: 855eb36b143107f49b594810ab88d761, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_65BB0B59:
-        m_Texture: {fileID: 2800000, guid: 86166832c4793e047b7ad6395c1eb9d5, type: 3}
+        m_Texture: {fileID: 2800000, guid: a7f56e95a5448f54585550b8445b8258, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -52,6 +60,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_3BFE852_Out_0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
@@ -67,6 +79,7 @@ Material:
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Rotation: 0
     - _SampleGI: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -76,12 +89,18 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Vector3_C30E52A1: {r: 1, g: 1, b: 1, a: 0}
+    - Vector3_6B1027DD: {r: 0, g: 0, b: 0, a: 0}
+    - Vector3_C30E52A1: {r: 2, g: 2, b: 2, a: 0}
+    - Vector3_D0D1A7F: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Pivot: {r: 0, g: 0, b: 0, a: 0}
+    - _Rotation: {r: 0, g: 0, b: 0, a: 0}
+    - _Size: {r: 1, g: 1, b: 1, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _Tint: {r: 1, g: 1, b: 1, a: 0.5019608}
 --- !u!114 &1095158553236197517
 MonoBehaviour:
   m_ObjectHideFlags: 11
