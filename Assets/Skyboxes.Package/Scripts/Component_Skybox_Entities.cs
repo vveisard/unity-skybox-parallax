@@ -17,15 +17,23 @@ namespace SINeDUSTRIES.Unity.Runtime.Skybox {
     public GameObject EntityRender;
 
     /// <summary>
-    /// Entity which is tracked.
+    /// Entity whose properties are passed to the Skybox Renderer.
     /// </summary>
-    public GameObject EntityTrack;
+    /// <example>
+    /// Position: Skybox render will be passed the position of <see cref="EntityTarget"/>.
+    /// </example>
+    public GameObject EntityTarget;
 
     /// <summary>
-    /// Entity which <see cref="EntityTrack"/> property is calculated relative to.
-    /// if null, property is measured "globally".
+    /// Entity which properties of <see cref="EntityTarget"/> are calculated relative to.
+    /// ie, Skybox properties of <see cref="EntityTarget"/> are calculated relative to <see cref="EntityOrigin"/>.
+    /// if null, property is measured or relative to 0 (ie, "globally").
     /// </summary>
-    public GameObject EntityTrackOrigin;
+    /// <example>
+    /// _LocalPosition: Skybox Renderer will be passed the position of <see cref="EntityTarget"/>, relative to <see cref="EntityOrigin"/>.
+    /// this effectively moves the Skybox render to <see cref="EntityOrigin"/>.
+    /// </example>
+    public GameObject EntityOrigin;
 
 #endregion
   }
