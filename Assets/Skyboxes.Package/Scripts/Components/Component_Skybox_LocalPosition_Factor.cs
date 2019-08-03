@@ -7,7 +7,7 @@ namespace SINeDUSTRIES.Unity.Runtime.Skybox {
   /// <summary>
   /// Parameters for modifying the _LocalPosition property of the Skybox Renderer.
   /// </summary>
-  public class Component_Skybox_LocalPosition : PsuedoComponent {
+  public class Component_Skybox_LocalPosition_Factor : PsuedoComponent {
 
 #region Data
 

@@ -5,16 +5,16 @@ using UnityEngine;
 namespace SINeDUSTRIES.Unity.Runtime.Skybox {
 
   /// <summary>
-  /// <see cref="Component_Skybox_Property"/>.
+  /// Set <see cref="Component_Skybox_Properties.LocalPosition"/>.
   /// </summary>
-  public class System_Skybox_LocalPosition : PsuedoSystem {
+  public class System_Skybox_LocalPosition_Factor : PsuedoSystem {
 
 #region messages
 
     protected void LateUpdate() {
 
-      Components.ForEach<Component_Skybox_Entities, Component_Skybox_LocalPosition>(
-        (c_skyboxEntities, c_property) => {
+      Components.ForEach<Component_Skybox_Entities, Component_Skybox_Properties, Component_Skybox_LocalPosition_Factor>(
+        (c_skyboxEntities, c_property, c_factor) => {
 
           Vector3 i_localPosition;
           if (c_skyboxEntities.EntityOrigin == null) {
@@ -27,9 +27,9 @@ namespace SINeDUSTRIES.Unity.Runtime.Skybox {
             i_localPosition = c_skyboxEntities.EntityTarget.transform.position - c_skyboxEntities.EntityOrigin.transform.position;
           }
 
-          i_localPosition.Scale(c_property.Factor);
+          i_localPosition.Scale(c_factor.Factor);
 
-          c_skyboxEntities.EntityRender.GetComponentInChildren<Renderer>().material.SetVector("_LocalPosition", i_localPosition);
+          c_property.LocalPosition = i_localPosition;
         }
       );
     }
