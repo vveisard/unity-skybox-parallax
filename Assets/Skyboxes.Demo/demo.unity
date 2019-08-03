@@ -644,6 +644,7 @@ GameObject:
   - component: {fileID: 1501965486}
   - component: {fileID: 1501965487}
   - component: {fileID: 1501965490}
+  - component: {fileID: 1501965489}
   - component: {fileID: 1501965488}
   m_Layer: 0
   m_Name: -component_skybox_caffe
@@ -693,7 +694,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9a373102b1df24dab731e6d3eb5cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Factor: {x: -1, y: -1, z: -1}
+  FactorX: -1
+  FactorY: -1
+  FactorZ: -1
+--- !u!114 &1501965489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501965485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e364f634ffa59954aa139f4add3b8aad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Factor: {x: -2.5, y: -2.5, z: -2.5}
 --- !u!114 &1501965490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,7 +869,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9a373102b1df24dab731e6d3eb5cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Factor: {x: -1, y: -1, z: -1}
+  FactorX: 0
+  FactorY: 0
+  FactorZ: 0
 --- !u!114 &1973082407
 MonoBehaviour:
   m_ObjectHideFlags: 0
