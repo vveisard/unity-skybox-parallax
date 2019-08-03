@@ -1,0 +1,10 @@
+Motivation
+- Easier to write code for games in ECS style
+- Get acclimated to ECS paradigms
+- Unity's ECS is in preview
+
+Performance
+- does not boast performance benefits; Systems are probably less performant
+
+Entities
+- in PsuedoECS, GameObject are Entities
