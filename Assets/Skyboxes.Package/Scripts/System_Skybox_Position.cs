@@ -5,7 +5,7 @@ namespace SINeDUSTRIES.Unity.Runtime.Skybox {
   /// <summary>
   /// <see cref="Component_Skybox_Property"/>.
   /// </summary>
-  public class System_Skybox_Position : System_Skybox_ScaledProperty<Component_Skybox_Position, Vector3, Vector3> {
+  public class System_Skybox_Position : System_Skybox_ScaledProperty<Component_Skybox_RenderPosition, Vector3, Vector3> {
 #region methods / concrete
 
     protected override Vector3 propertyDetermine(GameObject entityTracked) =>
@@ -20,7 +20,6 @@ namespace SINeDUSTRIES.Unity.Runtime.Skybox {
     }
 
     protected override void propertySet(GameObject render, Vector3 property) {
-      Debug.Log($"meep {property}");
       render.GetComponentInChildren<Renderer>().material.SetVector("_Position", property);
     }
 

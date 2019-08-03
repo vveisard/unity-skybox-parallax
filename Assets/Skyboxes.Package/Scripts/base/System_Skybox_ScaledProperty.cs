@@ -41,7 +41,7 @@ namespace SINeDUSTRIES.Unity.Runtime.Skybox {
               i_property = propertyDetermineRelative(c_skyboxEntities.EntityTrack, c_skyboxEntities.EntityTrackOrigin);
             }
 
-            i_property = this.propertyScale(i_property, c_skyboxEntities.EntityRender.GetComponentInChildren<TComponentScaledProperty>().Factor); // scale property by the factor
+            i_property = this.propertyScale(i_property, c_skyboxEntities.EntityRender.GetComponentInChildren<TComponentScaledProperty>().Scale); // scale property by the factor
 
             this.propertySet(c_skyboxEntities.EntityRender, i_property); // assign property
           }

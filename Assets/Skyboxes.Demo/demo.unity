@@ -247,10 +247,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 550763234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42314c3174f43df468413ed791599438, type: 3}
+  m_Script: {fileID: 11500000, guid: 75d375a26e87cea4f8693139af39ba03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Factor: {x: -0.1, y: 0.1, z: 0.1}
+  Scale: {x: 0, y: -0.1, z: 0}
+  RotationTrackedUnscaled: {x: 0, y: 0, z: 0, w: 0}
+  RotationRenderScaled: {x: 0, y: 0, z: 0}
 --- !u!1 &679781259
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,10 +601,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1457895624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d341449203f56e140a2b3207e970d396, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f9e16fb2406dfd4da2ad6effab49179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Factor: {x: -1, y: -1, z: -1}
+  Scale: {x: -0.1, y: -0.1, z: -0.1}
 --- !u!1 &1501965485
 GameObject:
   m_ObjectHideFlags: 0
