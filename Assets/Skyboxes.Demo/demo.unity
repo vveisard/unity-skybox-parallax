@@ -869,9 +869,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9a373102b1df24dab731e6d3eb5cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FactorX: 0
+  FactorX: -1
   FactorY: 0
-  FactorZ: 0
+  FactorZ: -1
 --- !u!114 &1973082407
 MonoBehaviour:
   m_ObjectHideFlags: 0
